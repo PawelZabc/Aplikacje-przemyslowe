@@ -9,6 +9,9 @@ public class Employee {
     private Position position;
     private double salary;
 
+
+    static Comparator<Employee> bySurname = (emp1,emp2) -> emp1.getSurname().compareTo(emp2.getSurname());
+    static Comparator<Employee> bySalary = (emp1,emp2) -> emp1.getSalary()>emp2.getSalary() ? -1 : 1;
     public enum Position {
         Prezes("Prezes",25000.0,1),
         Wiceprezes("Wiceprezes",18000.0,2),
@@ -25,6 +28,16 @@ public class Employee {
             this.hierarchy = hierarchy;
         }
 
+    }
+    @Override public boolean equals(Object o) {
+        if (this.email.equals(((Employee) o).email)) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override public int hashCode() {
+        return email.hashCode();
     }
 
     Employee(String name, String surname, String email, String companyName, Position position) {
