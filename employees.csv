@@ -1,0 +1,8 @@
+name,surname,email,companyName,position,salary
+Anna,Kowalska,anna.kowalska@example.com,SoftPol,Prezes,25000.0
+Tomasz,Nowak,tomasz.nowak@example.com,TechnoDom,Wieprezes,18000.0
+Ewa,Wiśniewska,ewa.wisniewska@example.com,InfoNet,Manager,12000.0
+Marek,Kaminski,marek.kaminski@example.com,DevHouseProgramista,8000.0
+Piotr,Zieliński,piotr.zielinski@example.com,StartApp,Stażysta,3000.0
+Piotr,2ieliński,piotr.2ielinski@example.com,StartApp,Stażysta,3000.0
+Piotr,3ieliński,piotr.3ielinski@example.com,StartApp,Prezes,25000.0
